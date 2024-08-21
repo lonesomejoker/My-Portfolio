@@ -57,6 +57,18 @@ export const aboutItems=[
   },
 ]
 
+export const projectNums=[
+  {
+    id:1,
+    num:"8+",
+    desc:"Projects Completed"
+  },
+  {
+    id:2,
+    num:"8+",
+    desc:"Projects Completed"
+  }
+]
 export const headerVariants = {
     hidden: {
       opacity: 0,

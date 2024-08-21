@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import About from "../components/About";
+import WorkExp from "../components/WorkExp";
 
 const ProfileLayout = () => {
   return (
@@ -9,6 +10,7 @@ const ProfileLayout = () => {
       <Header />
       <Landing />
       <About/>
+      <WorkExp/>
     </div>
   );
 };

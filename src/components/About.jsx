@@ -1,5 +1,5 @@
 import React from 'react'
-import { aboutItems, fadeIn, staggerContainer, textVariant } from '../common/Elements'
+import { aboutItems, fadeIn, projectNums, staggerContainer, textVariant } from '../common/Elements'
 import { motion } from 'framer-motion'
 
 const About = () => {
@@ -25,22 +25,24 @@ const About = () => {
         }
       </div>
       <motion.div variants={textVariant(0.5)} className=' font-[450] mt-4 lg:mt-0 '>
-        <h1 className=' text-[28px] lg:text-[38px] font-[600]'>What do I do?</h1>
-        <section className=' w-[98%] my-5 text-justify lg:text-left'>
+        <h1 className=' text-[28px] lg:text-[38px] font-[550]'>What do I do?</h1>
+        <div className=' w-[98%] my-5 text-justify lg:text-left'>
         <p>Officia officia et nulla proident consequat. Velit mollit esse qui quis ipsum laborum esse quis commodo aliqua est commodo. Ipsum ipsum aliquip eiusmod excepteur magna occaecat. Deserunt eu nulla ullamco Lorem proident.</p>
         <p className=' mt-3'>Eu aliquip nisi et nulla. Cupidatat laborum consectetur consectetur veniam nulla sint dolor ea non dolor quis.</p>
-        </section>
-        <div className=' flex gap-x-3 justify-center lg:justify-start'>
-        <section  className=' border-[3px] border-stone-800 px-3 py-4 rounded-tr-2xl rounded-bl-2xl'>
-            <h1 className='font-600 text-[32px] text-center'>8+ </h1>
-            <p className=' text-center'>Projects Completed</p>
-        </section>
-        <section className=' border-[3px] border-stone-800 px-3 py-4 rounded-tl-2xl rounded-br-2xl'>
-        <h1 className='font-600 text-[32px] text-center'>1+ </h1>
-        <p className=' text-center'>Company worked</p>
-        </section>
-
         </div>
+
+        {/* <motion.div className=' flex gap-x-3 justify-center lg:justify-start w-[80%]'>
+        <section  className=' border-[2px] border-stone-800 px-1.5 lg:px-3 py-3 rounded-tr-2xl rounded-bl-2xl'>
+            <h1 className=' font-[400] lg:font-600 text-[18px] lg:text-[32px] text-center'>8+ </h1>
+            <p className=' text-center text-[12px]'>Projects Completed</p>
+        </section>
+        <section className=' border-[2px] border-stone-800 px-1.5 lg:px-3 py-3 rounded-tl-2xl rounded-br-2xl'>
+        <h1 className='font-[400] lg:font-600 text-[18px] lg:text-[32px] text-center'>1+ </h1>
+        <p className=' text-center text-[12px]'>Company worked</p>
+        </section>
+        </motion.div> */}
+        
+
       </motion.div>
       </div>
     </motion.div>
