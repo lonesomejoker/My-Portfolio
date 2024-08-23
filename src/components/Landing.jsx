@@ -14,8 +14,8 @@ const Landing = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-     className="px-5 lg:px-28  pt-[5rem] lg:pt-[8rem] pb-[2rem] bg-neutral-900">
-      <div>
+     className="pt-[5rem] lg:pt-[8rem] pb-[1rem] lg:pb-[2rem] bg-neutral-900">
+      <div className=" container">
         <div className=" flex justify-between" style={{ zIndex: 2 }}>
           <motion.h1 variants={fadeIn("right","tween",0.2,1)} className=" font-bold text-[22px] lg:text-[38px] ">
             Hey There,
@@ -51,12 +51,12 @@ const Landing = () => {
           </section>
           <motion.img variants={slideIn("down","tween",0.5,1)}
             src={profile}
-            className=" h-[18rem] lg:h-[24rem] relative lg:-bottom-[5.5rem] lg:left-[15%]"
+            className=" h-[22rem] lg:h-[24rem] relative lg:-bottom-[5.5rem] lg:left-[15%]"
             style={{ zIndex: 5 }}
           />
           <motion.img variants={fadeIn("up","tween",0.4,1)}
             src={splash}
-            className=" h-[22rem] lg:h-[28rem] absolute bottom-5 lg:-bottom-[5.5rem] lg:right-[22%] xl:right-[37%]"
+            className=" h-[24rem] lg:h-[28rem] absolute bottom-5 lg:-bottom-[5.5rem] lg:right-[22%] xl:right-[37%]"
             style={{ zIndex: 1 }}
           />
         </div>

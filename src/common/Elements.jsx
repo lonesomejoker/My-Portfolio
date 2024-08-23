@@ -57,6 +57,33 @@ export const aboutItems=[
   },
 ]
 
+export const sliderData=[
+  {
+    id:1,
+    title:"Online Shoe Store",
+    link:"https://online-shoe-store.netlify.app/",
+    image:"/assets/shoe-store.png"
+  },
+  {
+    id:2,
+    title:"Hotel Site",
+    link:"https://hotel-wpg.netlify.app/",
+    image:"/assets/hotel-site.png"
+  },
+  {
+    id:3,
+    title:"Movie Streaming Website",
+    link:"https://streammovieweb.netlify.app/",
+    image:"/assets/movie-site.png"
+  },
+  {
+    id:4,
+    title:"Plant Shop",
+    link:"https://plant-shop-vurilo.netlify.app/",
+    image:"/assets/plant-shop.png"
+  }
+]
+
 export const projectNums=[
   {
     id:1,
@@ -100,6 +127,16 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
       },
     },
 });
+
+export const staggerChildren = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
 
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
@@ -150,6 +187,39 @@ export const textVariant = (delay) => ({
       type: "spring",
       duration: 3,
       delay,
+    },
+  },
+});
+
+export const textVariant2 = (delay) =>({
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      ease: "easeIn",
+      delay
+    },
+  },
+});
+
+export const zoomIn = (delay, duration) => ({
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      delay,
+      duration,
+      ease: "easeOut",
     },
   },
 });

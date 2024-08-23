@@ -34,11 +34,12 @@ const Header = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`fixed w-full px-5 lg:px-28 flex justify-between items-center bg-neutral-900 py-4 lg:py-7 mb-20 text-gray-200 font-semibold ${
+      className={`fixed w-full  bg-neutral-900 mb-20 text-gray-200 font-semibold ${
         showBorder ? " shadow-md shadow-stone-700" : "border-0"
       }`}
       style={{ zIndex: 10 }}
-    >
+    > 
+     <div className="container flex justify-between items-center">
       <h1 className="text-lg lg:text-[22px] font-semibold">SERIES STHA</h1>
 
       {/* for larger screens */}
@@ -76,6 +77,7 @@ const Header = () => {
         onClick={toggleMenu}
       >
         {menuOpen ? <RxCross2 size={40} /> : <MdOutlineMenuOpen size={40} />}
+      </div>
       </div>
     </motion.div>
   );
