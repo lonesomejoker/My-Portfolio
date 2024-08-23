@@ -33,7 +33,7 @@ const Work = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <div className=" container">
-        <h1 className=" font-[600] lg:text-2xl mb-[2rem] text-lg text-center lg:text-left">My Work Experience</h1>
+        <motion.h1 className=" font-[600] lg:text-2xl mb-[2rem] text-lg text-center lg:text-left" variants={fadeIn("up", "tween", 1, 1.5)}>My Work Experience</motion.h1>
         <div className=" relative space-y-[2rem] ">
           {workExp.map((item, idx) => {
             return (

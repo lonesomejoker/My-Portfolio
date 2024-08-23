@@ -14,9 +14,9 @@ const Landing = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-     className="pt-[5rem] lg:pt-[8rem] pb-[1rem] lg:pb-[2rem] bg-neutral-900">
+     className="pt-[5rem] lg:pt-[8rem]  bg-neutral-900">
       <div className=" container">
-        <div className=" flex justify-between" style={{ zIndex: 2 }}>
+        <div className=" flex justify-between items-center lg:items-start" style={{ zIndex: 2 }}>
           <motion.h1 variants={fadeIn("right","tween",0.2,1)} className=" font-bold text-[22px] lg:text-[38px] ">
             Hey There,
             <br />
@@ -26,7 +26,7 @@ const Landing = () => {
         </div>
 
         <div className=" flex lg:flex-row flex-col items-center py-5 lg:py-0 relative">
-          <section style={{zIndex:3}} className=" flex flex-col justify-center lg:justify-start">
+          <section style={{zIndex:3}} className=" flex flex-col justify-center lg:justify-start pt-10 lg:pt-0">
             <h1 className=" font-semibold text-[20px] lg:text-xl text-center lg:text-left ">Connect with me</h1>
             <section className=" flex gap-x-5 my-4 items-center mx-auto lg:mx-0">
               <a href="https://www.linkedin.com/in/series-shrestha/">

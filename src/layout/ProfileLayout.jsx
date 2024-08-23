@@ -4,6 +4,7 @@ import Landing from "../components/Landing";
 import About from "../components/About";
 import Work from "../components/Work";
 import Portfolio from "../components/Portfolio";
+import TechStack from "../components/TechStack";
 
 const ProfileLayout = () => {
   return (
@@ -13,6 +14,7 @@ const ProfileLayout = () => {
       <About/>
       <Work/>
       <Portfolio/>
+      <TechStack/>
     </div>
   );
 };
