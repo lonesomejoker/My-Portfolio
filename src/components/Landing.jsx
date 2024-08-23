@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profile from "/assets/pp.png";
+import profile from "/assets/pp4.png";
 import splash from "/assets/splash.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -59,6 +59,7 @@ const Landing = () => {
             className=" h-[24rem] lg:h-[28rem] absolute bottom-5 lg:-bottom-[5.5rem] lg:right-[22%] xl:right-[37%]"
             style={{ zIndex: 1 }}
           />
+          <img src="/assets/dotted.png" alt="hash" className=" opacity-60 h-[6rem] lg:h-[12rem] absolute top-0 right-0 z-0"/>
         </div>
         <div className=" flex  justify-between font-[500] items-center">
           <motion.section className=" flex gap-x-3 items-center " variants={fadeIn("right","tween",0.2,1)}>

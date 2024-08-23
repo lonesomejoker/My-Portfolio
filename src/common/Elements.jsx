@@ -29,8 +29,7 @@ export const navItems=[
           title:"+977-9810113906",
           icon:<LuPhoneOutgoing
           color="limegreen"
-          size={40}
-          className=" bg-white text-green-400 p-[8px] rounded-[999px] shadow-md shadow-gray-400"
+          className=" text-[1.9rem] bg-gray-700 text-green-400 p-[3px] rounded-tl-lg rounded-br-lg shadow-md shadow-green-600"
         />
     },
 ]

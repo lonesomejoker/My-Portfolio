@@ -45,11 +45,11 @@ const Header = () => {
       {/* for larger screens */}
       <div className={`hidden lg:flex gap-x-5`}>
         {navItems.map((item) => (
-          <div key={item.id} className="flex items-center gap-x-1">
+          <div key={item.id} className="flex items-center content-center gap-x-2">
             <h2 className="hover:text-indigo-500 duration-500 my-2 lg:my-0">
               {item.title}
             </h2>
-            <p className="hidden lg:block">{item.icon}</p>
+            <p className="hidden lg:block animate-pulse">{item.icon}</p>
           </div>
         ))}
       </div>
