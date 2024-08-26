@@ -49,7 +49,7 @@ const Footer = () => {
               <a
                 href="/assets/Shirish_Resume.pdf"
                 download="Shirish_Resume.pdf"
-                className="font-semibold px-4 py-3 rounded-3xl bg-gradient-to-r from-violet-800 hover:translate-x-2 duration-500 inline-block"
+                className="font-semibold px-4 py-3 rounded-3xl hover:bg-purple-700 bg-gradient-to-r from-violet-800 hover:translate-x-2 duration-500 inline-block"
               >
                 Download CV
               </a>

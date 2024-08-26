@@ -97,13 +97,13 @@ const TechStack = () => {
               <motion.div
                 key={item.id}
                 variants={fadeIn("up", "tween", (idx + 1) * 0.3, 1.5)}
-                className="space-y-2 py-4 mx-auto content-center z-[3]"
+                className="space-y-2 py-4 mx-auto content-center z-[3] hover:scale-125 duration-500"
               >
-                <img
+                <img 
                   src={item.image}
                   alt={item.title}
                   style={{ height: item.height }}
-                  className="mx-auto"
+                  className="mx-auto hover:scale-110 duration-500"
                 />
                 <h1
                   style={{ color: item.color }}
