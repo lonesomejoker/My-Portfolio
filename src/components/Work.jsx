@@ -30,11 +30,11 @@ const Work = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }} id="projects"
     >
       <div className=" container">
         <motion.h1 className=" font-[600] lg:text-2xl mb-[2rem] text-lg text-center lg:text-left" variants={fadeIn("up", "tween", 1, 1.5)}>My Work Experience</motion.h1>
-        <div className=" relative space-y-[2rem] ">
+        <div className=" relative space-y-[2rem] text-gray-200 ">
           {workExp.map((item, idx) => {
             return (
               <motion.div

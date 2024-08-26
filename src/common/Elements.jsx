@@ -6,27 +6,27 @@ import { TbBrandAsana } from "react-icons/tb";
 export const navItems=[
     {
         id:1,
-        title:"SERVICES",
-        path:"services"
+        title:"HOME",
+        path:"intro"
     },
     {
         id:2,
-        title:"EXPERIENCE",
-        path:"experience"
+        title:"ABOUT ME",
+        path:"about"
     },
     {
         id:3,
-        title:"PORTFOLIO",
-        path:"portfolio"
+        title:"PROJECTS",
+        path:"projects"
     },
     {
         id:4,
-        title:"TESTIMONIALS",
-        path:"testimonial"
+        title:"SKILLSET",
+        path:"skills"
     },
     {
           id:5,
-          title:"+977-9810113906",
+          title:"9810113906",
           icon:<LuPhoneOutgoing
           color="limegreen"
           className=" text-[1.9rem] bg-gray-700 text-green-400 p-[3px] rounded-tl-lg rounded-br-lg shadow-md shadow-green-600"

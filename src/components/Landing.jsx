@@ -14,7 +14,7 @@ const Landing = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-     className="pt-[5rem] lg:pt-[8rem]  bg-neutral-900">
+     className="pt-[5rem] lg:pt-[7.3rem]  bg-neutral-900" id="intro">
       <div className=" container">
         <div className=" flex justify-between items-center lg:items-start" style={{ zIndex: 2 }}>
           <motion.h1 variants={fadeIn("right","tween",0.2,1)} className=" font-bold text-[22px] lg:text-[38px] ">
@@ -22,7 +22,7 @@ const Landing = () => {
             <br />
             I'm Shirish{" "}
           </motion.h1>
-          <motion.h1 variants={fadeIn("left","tween",0.4,1)} className=" w-[47%] lg:w-auto text-sm lg:text-lg text-right">I design beautiful sinplem things, And i love what i do</motion.h1>
+          <motion.h1 variants={fadeIn("left","tween",0.4,1)} className=" w-[47%] lg:w-auto text-sm lg:text-lg text-right">In occaecat nulla laboris ipsum ea laboris mollit est.</motion.h1>
         </div>
 
         <div className=" flex lg:flex-row flex-col items-center py-5 lg:py-0 relative">
@@ -41,7 +41,7 @@ const Landing = () => {
             </section>
             <a
               href="mailto:shakestha@gmail.com"
-              className=" flex items-center gap-x-1 text-cyan-600 underline"
+              className=" flex items-center gap-x-1 text-blue-400 underline"
             >
               <span className=" text-2xl">
                 <CgMail />
