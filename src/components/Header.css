@@ -43,3 +43,15 @@
   background-color: black;
   animation: border-shrink 500ms forwards;
 }
+
+/* Media query for medium and smaller screens */
+@media (max-width: 768px) {
+  .active-link {
+    color: #4c4c4c; /* Change text color when active */
+  }
+
+  .active-link::after,
+  .link:not(.active-link)::after {
+    content: none; /* Remove borders */
+  }
+}

@@ -13,7 +13,7 @@ const About = () => {
         {
           aboutItems.map((item,idx)=>{
             return(
-                <motion.div variants={fadeIn("right","tween",(idx+1)*0.3,1)} className=' px-3 lg:px-4 py-4 lg:py-6 flex items-center gap-x-5 border-2 border-violet-700 rounded-tr-2xl rounded-bl-2xl w-full lg:w-[80%] mx-auto text-white lg:mx-0' key={item.id}>
+                <motion.div variants={fadeIn("right","tween",(idx+1)*0.3,1)} className=' px-3 lg:px-4 py-4 lg:py-6 flex items-center gap-x-5 border-2 border-[#7d42bb] rounded-tr-2xl rounded-bl-2xl w-full lg:w-[80%] mx-auto text-white lg:mx-0' key={item.id}>
                   <h1 className=''>{item.icon}</h1>
                   <section className=' space-y-2.5'>
                   <h1 className=' font-[500] text-[18px] lg:text-[20px] '>{item.title}</h1>
@@ -32,11 +32,11 @@ const About = () => {
         </div>
 
         <motion.div className=' flex gap-x-3 justify-center lg:justify-start text-gray-300'>
-        <section  className=' border-[3px] border-violet-700 px-3 py-3 rounded-tr-2xl rounded-bl-2xl'>
+        <section  className=' border-[3px] border-[#7d42bb] px-3 py-3 rounded-tr-2xl rounded-bl-2xl'>
             <h1 className=' font-[400] lg:font-600 text-[28px] lg:text-[32px] text-center'>8+ </h1>
             <p className=' text-center '>Projects Completed</p>
         </section>
-        <section className=' border-[3px] border-violet-700 px-1.5 lg:px-3 py-3 rounded-tl-2xl rounded-br-2xl'>
+        <section className=' border-[3px] border-[#7d42bb] px-1.5 lg:px-3 py-3 rounded-tl-2xl rounded-br-2xl'>
         <h1 className='font-[400] lg:font-600 text-[28px] lg:text-[32px] text-center'>1+ </h1>
         <p className=' text-center'>Company worked</p>
         </section>

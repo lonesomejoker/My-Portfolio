@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const ProfileLayout = () => {
   return (
-    <div className=" font-poppins text-violet-700 overflow-x-clip">
+    <div className=" font-poppins text-[#7d42bb] overflow-x-clip">
       <Header />
       <Landing />
       <About/>

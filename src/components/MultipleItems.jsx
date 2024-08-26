@@ -6,6 +6,22 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerChildren } from "../common/Elements";
 
 const MultipleItems = ({ data }) => {
+  const NextArrow = ({ onClick }) => {
+    return (
+      <div className=" text-gray-400 font-[30px] cursor-pointer z-[1] absolute top-[40%] -right-10" onClick={onClick}>
+        <IoIosArrowForward className=" text-[2rem] lg:text-[2.5rem]"/>
+      </div>
+    );
+  };
+  
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div className=" text-gray-400 font-[30px] cursor-pointer z-[1] absolute top-[40%] -left-10" onClick={onClick}>
+        <IoIosArrowBack className=" text-[2rem] lg:text-[2.5rem]"/>
+      </div>
+    );
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -13,8 +29,8 @@ const MultipleItems = ({ data }) => {
     autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 2,
-    nextArrow: <IoIosArrowForward color="#484848"/>,
-    prevArrow: <IoIosArrowBack color="#484848" />,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>,
     responsive: [
       {
         breakpoint: 1024, // Medium screens (e.g., tablets)
@@ -41,7 +57,7 @@ const MultipleItems = ({ data }) => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <Slider {...settings}>
+      <Slider {...settings} className=" relative">
         {data.map((item, idx) => {
           return (
             <div className="px-1 lg:px-3 shadow-md group" key={item.id}>

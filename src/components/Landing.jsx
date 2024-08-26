@@ -30,13 +30,13 @@ const Landing = () => {
             <h1 className=" font-semibold text-[20px] lg:text-xl text-center lg:text-left ">Connect with me</h1>
             <section className=" flex gap-x-5 my-4 items-center mx-auto lg:mx-0">
               <a href="https://www.linkedin.com/in/series-shrestha/">
-                <FaLinkedin className=" text-blue-400" size={32} />
+                <FaLinkedin className=" text-[#0a62bc]" size={32} />
               </a>
               <a href="https://github.com/lonesomejoker">
-                <FaGithub className="" size={32} />
+                <FaGithub className="text-gray-200" size={32} />
               </a>
               <a href="https://www.facebook.com/lonesomejoker.100/">
-                <FaFacebookSquare className=" text-blue-800" size={32} />
+                <FaFacebookSquare className=" text-[#0a67ff]" size={32} />
               </a>
             </section>
             <a

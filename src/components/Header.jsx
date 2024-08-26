@@ -3,7 +3,7 @@ import { headerVariants, navItems } from "../common/Elements";
 import { motion } from "framer-motion";
 import { MdOutlineMenuOpen } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
-import { Link, Events, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 import "./Header.css";
 
 const Header = () => {
@@ -30,6 +30,11 @@ const Header = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const handleCopy = (number) => {
+    navigator.clipboard.writeText(number).then(() => {
+      alert("Number copied");
+    });
+  };
   return (
     <motion.div
       variants={headerVariants}
@@ -41,7 +46,7 @@ const Header = () => {
       }`}
       style={{ zIndex: 10 }}
     > 
-     <div className="container flex justify-between items-center text-violet-600">
+     <div className="container flex justify-between items-center text-[#7d42bb]">
       <h1 className="text-lg lg:text-[22px] font-semibold">SERIES STHA</h1>
 
       {/* for larger screens */}
@@ -49,10 +54,11 @@ const Header = () => {
         {navItems.map((item,idx) => (
           <div key={item.id} className="flex items-center content-center gap-x-2">
           <Link to={item.path} smooth={true} spy={true} offset={-50} duration={800} key={idx} activeClass="active-link">
-            <h2 className="text-violet-600 hover:text-gray-300 duration-500 my-2  py-1 lg:my-0">
+            <h2 className="text-[#7d42bb] hover:text-gray-300 duration-500 my-2  py-1 lg:my-0">
               {item.title}
-            </h2></Link>
-            <p className="hidden lg:block animate-pulse">{item.icon}</p>
+            </h2>
+            </Link>
+            <p className="hidden lg:block animate-pulse" onClick={()=>handleCopy(item.number)}>{item.icon}</p>
           </div>
         ))}
       </div>

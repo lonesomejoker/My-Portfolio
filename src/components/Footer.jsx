@@ -1,46 +1,49 @@
 import React from "react";
-import { IoPhoneLandscapeOutline } from "react-icons/io5";
+import { TbDeviceMobile } from "react-icons/tb";
 import { IoIosMail } from "react-icons/io";
 import { TiLocation } from "react-icons/ti";
 
 const Footer = () => {
   return (
     <>
-      <div className=" pt-1 pb-[1.3rem] bg-neutral-950 text-gray-200 z-[1]">
+      <div className=" pt-1 pb-[1.3rem] bg-neutral-950 text-zinc-400 z-[1]">
         <div className=" grid grid-cols-3 md:grid-cols-5 container lg:gap-y-0 gap-y-12">
           <div className=" col-span-2 ">
-            <h1 className=" h-[80%] text-[1rem] lg:text-[1.2rem]  text-violet-500 font-[600] mb-3">
+           <section className=" h-[80%] ">
+            <h1 className="  text-[1rem] lg:text-[1.2rem]  text-[#7d42bb] font-[600] mb-3">
               L O N E S O M E J O K E R
             </h1>
-            <section className="w-fit mt-3">
-              <IoPhoneLandscapeOutline className=" text-[2rem] mx-auto text-violet-500" />
+            <p className=" font-light text-[14px] md:text-[16px] w-[88%] lg:w-[94%]">Pariatur sint proident aliquip velit proident mollit. Reprehen ipsum nisi minim mollit enim in tempor nisi Lorem est quis incididunt in velit.</p>
+            </section>
+            <section className="w-fit mt-1 lg:mt-3">
+              <TbDeviceMobile className=" text-[2rem] mx-auto text-[#7d42bb]" />
               <h3 className=" font-light text-[14px] md:text-[16px] lg:text-lg">
-                +977-9810113806
+                9810113806
               </h3>
             </section>
           </div>
           <div className=" col-span-1">
             <section className=" h-[80%]">
-              <h1 className=" text-[1.2rem]  text-violet-500 font-[600] mb-3">
+              <h1 className=" text-[1rem] lg:text-[1.2rem]  text-[#7d42bb] font-[600] mb-3">
                 Quick Links
               </h1>
-              <ul className=" font-light text-[15px] md:text-lg">
+              <ul className=" font-light text-[14px] md:text-[16px]">
                 <li>F.A.Q</li>
                 <li>Terms of Service</li>
                 <li>Support</li>
                 <li>My Certificates</li>
               </ul>
             </section>
-            <section className=" w-fit mt-3">
-              <IoIosMail className=" text-[2rem] mx-auto text-violet-500" />
-              <a href="mailto:shakestha@gmail.com" className=" font-light text-[12px] md:text-[16px] lg:text-lg">
+            <section className=" w-fit mt-1 lg:mt-3">
+              <IoIosMail className=" text-[2rem] mx-auto text-[#7d42bb]" />
+              <a href="mailto:shakestha@gmail.com" className=" font-light text-[11px] md:text-[16px] lg:text-lg">
                 shakestha@gmail.com
               </a>
             </section>
           </div>
-          <div className="col-span-3 md:col-span-2 mx-auto">
+          <div className="col-span-3 md:col-span-2 mx-auto md:justify-self-end md:mx-0">
             <section className=" h-[80%]">
-              <h1 className=" text-[1.2rem]  text-violet-500 font-[600] mb-3">
+              <h1 className=" text-[1rem] lg:text-[1.2rem] text-[#7d42bb] font-[600] mb-3">
                 Want To Hire Me?
               </h1>
               <a
@@ -48,11 +51,11 @@ const Footer = () => {
                 download="Shirish_Resume.pdf"
                 className="font-semibold px-4 py-3 rounded-3xl bg-gradient-to-r from-violet-800 hover:translate-x-2 duration-500 inline-block"
               >
-                Download C.V
+                Download CV
               </a>
             </section>
-            <section className=" w-fit mt-3 mx-auto">
-              <TiLocation className=" text-[2rem] mx-auto text-violet-500" />
+            <section className=" w-fit mt-1 lg:mt-3 mx-auto">
+              <TiLocation className=" text-[2rem] mx-auto text-[#7d42bb]" />
               <h3 className=" font-light text-[14px] md:text-[16px] lg:text-lg ">
                 Balambu,Kathmandu
               </h3>
