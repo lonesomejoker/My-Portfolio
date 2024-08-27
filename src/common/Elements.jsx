@@ -42,20 +42,20 @@ export const aboutItems = [
   {
     id: 1,
     title: "Frontend Development",
-    project: "8 projects",
+    project: "9 projects",
     icon: (
       <RiComputerLine className=" bg-green-500  p-2 rounded-full text-[3em]" />
     ),
   },
   {
     id: 2,
-    title: "Responsive Design",
+    title: "Dynamic & Responsive Design",
     project: "5 projects",
     icon: <CiMobile2 className=" bg-yellow-400  p-2 rounded-full text-[3em]" />,
   },
   {
     id: 3,
-    title: "Brand Identity",
+    title: "Api Interaction Projects",
     project: "4 projects",
     icon: (
       <TbBrandAsana className=" bg-orange-500 p-2 rounded-full text-[3em]" />

@@ -14,7 +14,7 @@ const Work = () => {
       company: "Think4Tech",
       position: "React Intern",
       desc: "Designed responsive and continous webpages with reusabel components",
-      date: "Mar 2024 - Aug 2024",
+      date: "Feb 2024 - Aug 2024",
     },
     {
       id: 2,
@@ -32,14 +32,14 @@ const Work = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }} id="projects"
     >
-      <div className=" container">
+      <div className="container ">
         <motion.h1 className=" font-[600] lg:text-2xl mb-[2rem] text-lg text-center lg:text-left" variants={fadeIn("up", "tween", 1, 1.5)}>My Work Experience</motion.h1>
         <div className=" relative space-y-[2rem] text-gray-200 ">
           {workExp.map((item, idx) => {
             return (
               <motion.div
                 variants={textVariant2((idx + 1) * 0.4)}
-                className=" flex w-full"
+                className="flex w-full "
                 key={item.id}
               >
                 <section className="flex-1">
@@ -48,7 +48,7 @@ const Work = () => {
                   </h1>
                   <p className=" font-[450] text-zinc-500 text-[15px] lg:text-lg">{item.date}</p>
                 </section>
-                <section className=" flex-1">
+                <section className="flex-1 ">
                   <h1 className=" font-[500] text-[16px] lg:text-[22px] ">
                     {item.position}
                   </h1>

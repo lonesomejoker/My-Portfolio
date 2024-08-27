@@ -91,19 +91,19 @@ const TechStack = () => {
         >
           My Techstack Skillsets
         </motion.h1>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-y-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-y-5">
           {techItems.map((item, idx) => {
             return (
               <motion.div
                 key={item.id}
-                variants={fadeIn("up", "tween", (idx + 1) * 0.3, 1.5)}
+                variants={fadeIn("up", "tween", (idx + 1) * 0.3, 1.2)}
                 className="space-y-2 py-4 mx-auto content-center z-[3] hover:scale-125 duration-500"
               >
                 <img 
                   src={item.image}
                   alt={item.title}
                   style={{ height: item.height }}
-                  className="mx-auto hover:scale-110 duration-500"
+                  className="mx-auto duration-500 hover:scale-110"
                 />
                 <h1
                   style={{ color: item.color }}
