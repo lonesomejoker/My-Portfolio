@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profile from "/assets/pp4.png";
+import profile from "/assets/pp.png";
 import splash from "/assets/splash.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
